@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/create_task.css">
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="tasks_criar">
+        <h2>CREATE A TASK</h2>
+        <div class="caixa_input">
+            <label for="data_input">Data</label>
+            <input type="date" id="data_input" class="input_data">
+        </div>
+        <div class="caixa_input">
+            <label for="titulo_input">Data</label>
+            <input type="titulo" id="titulo_input" class="input_data" placeholder="Title">
+        </div>
+
+        <h3>CHOOSE A LIST</h3>
+
+        <div class="button_tasks">
+            <button class="btn btn_tasks">MUST DO</button>
+            <button class="btn btn_tasks btn_destaque" >COULD DO</button>
+            <button class="btn btn_tasks">IF I HAVE TIME</button>
+        </div>
+    </div>
+
+    <div class="button_area">
+        <button class="btn btn_final">CREATE TASK</button>
+        <a class ="btn btn_final" href="index.html">BACK TO LIST</a>
+    </div>
+</body>
+</html>

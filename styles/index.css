@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'tangerineregular';
+    src: url('./fontes/tangerina/tangerine-webfont.woff2') format('woff2'),
+         url('./fontes/tangerina/tangerine-webfont.woff') format('woff'),
+         url('./fontes/tangerina/tangerine-webfont.ttf') format('truetype'),
+         url('tangerine-webfont.svg#tangerineregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --fonte: 'tangerineregular';
+    --rosa_cartao: #F9564F;
+    --amarelo_cartao: #F2CD5D;
+    --verde_cartao: #84A59D;
+    --roxo_cartao: #54426B;
+    --rosa_botao: #FD839D;
+    --verde_botao: #CCD5AE;
+    --cinza_botao: #D6D2D2;
+    --rosa_pesquisa: #EDC7CF;
+    --background: #F5F5F5;
+    --preto_fonte: #000000;
+    --marrom_fonte: #6A4A2B;
+    --branco_fonte: #F5F3EB;
+}

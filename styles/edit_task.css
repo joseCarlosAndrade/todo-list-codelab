@@ -1,0 +1,180 @@
+@import 'index.css';
+
+body {
+    font-family: var(--fonte);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--branco_fonte);
+}
+
+label {
+    position: absolute;
+    left: 500000px;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 1em 0 0.5em 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 1em 0 0.5em 0;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 1em 0 0 0;
+}
+
+.input_data {
+    height: 65px;
+    width: 355px;
+    background-color: var(--branco_fonte);
+    border-color: transparent;
+    border-radius: 25px 0 25px 0;
+    padding-left: 15px;
+    font-family: var(--fonte);
+    font-size: 24px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.input:placeholder-shown {
+    font-size: 20px;
+    font-family: var(--fonte);
+    color: var(--preto_fonte);
+}
+
+.input::placeholder {
+    font-size: 20px;
+    font-family: var(--fonte);
+    color: var(--preto_fonte);
+}
+
+.tasks_criar {
+    background-color: var(--rosa_pesquisa);
+    height: 593px;
+    width: 506px;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    flex-direction: column;
+    border-radius: 25px 0 25px 0;
+}
+
+.button_area {
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.button_tasks {
+    margin-top: 1em;
+}
+
+.button_tasks .btn {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: var(--cinza_botao);
+    border-radius: 25px 0 25px 0;
+    border-color: transparent;
+    height: 48px;
+    width: 170px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--preto_fonte);
+    text-align: center;
+    padding: 30px 10px 0 10px;
+    text-align: center;
+}
+
+button.btn_tasks {
+    font-family: var(--fonte);
+    padding-top: 10px;
+    font-size: 20px;
+    height: 58px;
+}
+
+.btn_destaque {
+    background-color: var(--rosa_botao);
+}
+
+.btn_verde {
+    background-color: var(--verde_botao);
+}
+
+button.btn_final {
+    padding-top: 5px;
+    height: 78px;
+    width: 170px;
+    font-family: var(--fonte);
+}
+
+.btn:hover{
+    background-color: var(--amarelo_cartao);
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+@media (max-width: 390px){
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+    
+    .tasks_criar {
+        width: 300px;
+        height: 500px;
+    }
+
+    .input_data, .input::placeholder{
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .button_area {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    button.btn_tasks {
+        font-size: 14px;
+    }
+
+    button.btn {
+        height: 50px;
+    }
+
+    button.btn_final {
+        width: 220px;
+        font-size: 20px;
+    }
+
+    a.btn{
+        height: 25px;
+        padding: 20px 0 5px 0;
+        width: 220px;
+        font-size: 20px;
+    }
+
+    .input::placeholder {
+        font-size: 16px;
+    }
+}
