@@ -57,6 +57,9 @@ h3 {
     justify-content: first baseline;
     flex-direction: column;
     border-radius: 25px 0 25px 0;
+    -webkit-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
 }
 
 .button_area {
@@ -90,6 +93,9 @@ h3 {
     text-align: center;
     padding: 30px 10px 0 10px;
     text-align: center;
+    -webkit-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
 }
 
 button.btn_tasks {

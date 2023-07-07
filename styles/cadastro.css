@@ -7,7 +7,6 @@ body{
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background-color: var(--branco_fonte);
 }
 
 label {
@@ -27,7 +26,7 @@ h2 {
 
 .background_forms{
     background-color: var(--cinza_botao);
-    height: 593px;
+    height: 60vh;
     width: 506px;
     display: flex;
     align-items: center;
@@ -86,8 +85,8 @@ h2 {
     padding-top: 30px;
     font-family: var(--fonte);
     -webkit-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
--moz-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
 }
 
 a.btn{
