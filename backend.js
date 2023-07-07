@@ -96,7 +96,7 @@ function login() {
         if (debugging) console.log("USUARIO RECONHECIDO. redirecionando..")
         // Redirects to main page
         
-        location.assign("./index.html")
+        location.assign("./home.html")
 
         // return true;
     }
