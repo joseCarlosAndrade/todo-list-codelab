@@ -30,6 +30,10 @@ input {
     width: 355px;
 }
 
+.btn {
+    height: 5vh;
+}
+
 :root{
     --fonte: 'tangerineregular';
     --rosa_cartao: #F9564F;
