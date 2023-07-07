@@ -25,15 +25,17 @@
         <h3>CHOOSE A LIST</h3>
 
         <div class="button_tasks">
-            <button class="btn btn_tasks">MUST DO</button>
-            <button class="btn btn_tasks btn_destaque" >COULD DO</button>
-            <button class="btn btn_tasks">IF I HAVE TIME</button>
+            <button class="btn btn_tasks btn_destaque" id="must_do" onclick="set_category('must_do')">MUST DO</button>
+            <button class="btn btn_tasks" id="could_do" onclick="set_category('could_do')">COULD DO</button>
+            <button class="btn btn_tasks" id="if_time" onclick="set_category('if_time')">IF I HAVE TIME</button>
         </div>
     </div>
 
     <div class="button_area">
-        <button class="btn btn_final" type="button">CREATE TASK</button>
-        <a class ="btn btn_final" href="index.html">BACK TO LIST</a>
+        <button class="btn btn_final" type="button" onclick="insert_new_task()">CREATE TASK</button>
+        <a class ="btn btn_final" href="home.html">BACK TO LIST</a>
     </div>
 </body>
+<script src="backend.js"></script>
+<script src="js/tasks.js"></script>
 </html>
