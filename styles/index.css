@@ -10,6 +10,11 @@
     font-style: normal;
 }
 
+body 
+{
+    width: 100vw;
+}
+
 :root{
     --fonte: 'tangerineregular';
     --rosa_cartao: #F9564F;

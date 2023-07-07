@@ -1,8 +1,22 @@
 // cadastro
+var debugging = true
 class User
 {
+    /**
+     * Classe principal do usuário.
+     * 
+     * Armazena informações relevantes sobre cada usuário que utilizou o site,
+     * como email, senha, o nome e o apelido do usuário.
+     * 
+     * @param {string} email 
+     * @param {string} name 
+     * @param {string} nickname 
+     * @param {string} password 
+     */
+
     constructor (email, name, nickname, password)
     {
+        // Construtor padrão que define os atributos do usuário (cada objeto).
         this.email = email; 
         this.name = name;
         this.nickname = nickname;
@@ -16,12 +30,17 @@ class User
 }
 
 function create_new_user() {
+    // Cadastro de um novo usuário, dando retrieve nos elementos correspondentes HTML.
+  
+    // TODO checar se espaçoes contem caracteres e nao estao vazios
     var email = document.getElementById("email_input").value;
     var name = document.getElementById("nome_input").value;
     var nickname = document.getElementById("nick_input").value;
     var password = document.getElementById("password_input").value;
 
     if (!localStorage.getItem(nickname)) {
+        // Caso usuario nao é encontrado pelo nickname em localstorage.
+
         const user = {
             email,
             name,
@@ -29,21 +48,29 @@ function create_new_user() {
             password,
         };
 
+        //  Desnecessário?
         user_test = new User(email, name, nickname, password);
     
         localStorage.setItem(nickname, JSON.stringify(user));
         //localStorage.setItem(nickname, JSON.stringify(user_test));
+        
+        // alert("Yay! Username saved!")
 
+        // Redirects to login page
+        location.assign("./login.html")
         return true;
     }
 
-    console.log("Username already exists!");
+    // console.log("Username already exists!");
+    // alert("Oops!  Username already in use.")
 
     return false;
 }
 
 // login
 function login() {
+    if(debugging) console.log("INICIANDO PROCESSO DE LOGIN")
+
     var username = document.getElementById("usuario_input").value;
     var password = document.getElementById("password_input").value;
   
@@ -52,6 +79,8 @@ function login() {
         password,
     };
 
+    if (debugging) console.log("DEBUGANDO: ", user)
+    
     user_info = JSON.parse(localStorage.getItem(username));
     //user_info = localStorage.getItem(username);
     console.log(user_info);
@@ -59,11 +88,17 @@ function login() {
 
     if (user_info && (user.password == user_info.password)) {
         sessionStorage.setItem('username', user.username);
-        window.location.href = "index.html";
+        // window.location.href = "index.html";
 
-        return true;
+        if (debugging) console.log("USUARIO RECONHECIDO. redirecionando..")
+        // Redirects to main page
+        
+        // location.assign("./index.html")
+
+        // return true;
     }
 
+    // alert("Oops! Invalid username or password!");
     console.log("Invalid username or password");
 
     return false;

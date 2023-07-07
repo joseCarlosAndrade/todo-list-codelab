@@ -2,6 +2,7 @@
 
 body{
     font-family: var(--fonte);
+    width: 100vw;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -34,6 +35,9 @@ h2 {
     flex-direction: column;
     border-radius: 25px 0 25px 0;
     border: 1px solid var(--preto_fonte);
+    -webkit-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
 }
 
 .input{
@@ -81,6 +85,9 @@ h2 {
     text-align: center;
     padding-top: 30px;
     font-family: var(--fonte);
+    -webkit-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
 }
 
 a.btn{
