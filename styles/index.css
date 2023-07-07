@@ -16,6 +16,11 @@ body
     height: 100vh;
 }
 
+input {
+    height: 5vh;
+    width: 355px;
+}
+
 :root{
     --fonte: 'tangerineregular';
     --rosa_cartao: #F9564F;

@@ -29,9 +29,7 @@ h3 {
     margin: 1em 0 0 0;
 }
 
-.input_data {
-    height: 65px;
-    width: 355px;
+.input {
     background-color: var(--branco_fonte);
     border-color: transparent;
     border-radius: 25px 0 25px 0;
@@ -56,7 +54,7 @@ h3 {
 
 .tasks_criar {
     background-color: var(--rosa_pesquisa);
-    height: 593px;
+    height: 60vh;
     width: 506px;
     display: flex;
     align-items: center;

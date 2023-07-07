@@ -21,7 +21,7 @@ h1 {
 
 h2 {
     font-size: 36px;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
 }
 
 .background_forms{
@@ -40,8 +40,6 @@ h2 {
 }
 
 .input{
-    height: 50px;
-    width: 355px;
     padding-left: 15px;
     border-radius: 25px 0 25px 0;
     border-color: transparent;

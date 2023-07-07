@@ -19,9 +19,7 @@ h2 {
     margin: 1em 0 0.5em 0;
 }
 
-.input_data{
-    height: 65px;
-    width: 355px;
+.input{
     background-color: var(--branco_fonte);
     border-color: transparent;
     border-radius: 25px 0 25px 0;
@@ -33,7 +31,7 @@ h2 {
 
 .tasks_prontas{
     background-color: var(--verde_botao);
-    height: 593px;
+    height: 60vh;
     width: 506px;
     display: flex;
     align-items: center;
