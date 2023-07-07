@@ -1,5 +1,8 @@
 // cadastro
 var debugging = true
+
+const items = {...localStorage};
+console.log("Itens atuais no localstorage: ", items)
 class User
 {
     /**
@@ -93,7 +96,7 @@ function login() {
         if (debugging) console.log("USUARIO RECONHECIDO. redirecionando..")
         // Redirects to main page
         
-        // location.assign("./index.html")
+        location.assign("./index.html")
 
         // return true;
     }
