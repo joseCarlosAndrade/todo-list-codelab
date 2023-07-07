@@ -7,8 +7,11 @@ body {
     height: 100vh;
     flex-direction: column;
     background-color: var(--branco_fonte);
+
 }
 
+
+/* Criminoso isso aqui */
 label {
     position: absolute;
     left: 500000px;
