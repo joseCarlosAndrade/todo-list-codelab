@@ -1,0 +1,139 @@
+@import 'index.css';
+
+body{
+    font-family: var(--fonte);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--branco_fonte);
+}
+
+h1 {
+    font-size: 64px;
+    margin: 1em 0 0.5em 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 1em 0 0.5em 0;
+}
+
+.date_container{
+    border-radius: 25px 0 25px 0;
+    background-color: var(--rosa_pesquisa);
+    width: 35vw;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.to-do-lists{
+    display: flex;
+    flex-direction: row;
+}
+
+.tasks_container{
+    height: 40vw;
+    width: 22vw;
+    overflow: auto;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:first baseline;
+    flex-direction: column;
+    border-radius: 25px 0 25px 0;
+    box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+}
+
+/* CLASSES SECUNDÁRIAS PARA OS CONTAINERS */
+.late{
+    background-color: var(--vermelho_cartao);
+    color: var(--branco_fonte);
+}
+.must_do{
+    background-color: var(--roxo_cartao);
+    color: var(--branco_fonte);
+}
+.could_do{
+    background-color: var(--verde_cartao);
+    color: var(--branco_fonte);
+}
+.if_time{
+    background-color: var(--amarelo_cartao);
+    color: var(--marrom_fonte);
+}
+.add{
+    background-color: var(--cinza_botao);    
+    border-radius: 25px 0 25px 0;
+    border-color: transparent;
+}
+.done{
+    background-color: var(--verde_botao);
+    border-radius: 25px 0 25px 0;
+    border-color: transparent;
+}
+
+.button_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.btn{
+    border-radius: 25px 0 25px 0;
+    border-color: transparent;
+    height: 48px;
+    width: 35vw;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--preto_fonte);
+    text-align: center;
+    padding: 30px 10px 0 10px;
+}
+
+.btn:hover{
+    background-color: var(--rosa_botao);
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+@media (max-width: 390px){
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+    
+    .tasks_prontas {
+        width: 300px;
+        height: 500px;
+    }
+
+    .input_data {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .button_area {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    button.btn {
+        height: 50px;
+    }
+
+    a.btn{
+        height: 35px;
+        padding-top: 15px;
+    }
+
+    .input::placeholder {
+        font-size: 16px;
+    }
+}
