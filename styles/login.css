@@ -7,14 +7,7 @@ body {
     height: 100vh;
     flex-direction: column;
     background-color: var(--branco_fonte);
-    background-image: url( '/wave.svg' ),
-                    url('/funky-lines.png');
-    /* background-size: cover; */
 
-    background-repeat: no-repeat, repeat;
-    background-position: bottom center;
-    background-size: auto, auto;
-    background-attachment: fixed, fixed;
 }
 
 
