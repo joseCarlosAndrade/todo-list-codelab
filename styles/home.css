@@ -6,17 +6,23 @@ body{
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background-color: var(--branco_fonte);
+    background-image: url('./images/funky-lines.png');
+    /* background-size: cover; */
+
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
 }
 
 h1 {
     font-size: 64px;
-    margin: 1em 0 0.5em 0;
+    margin: 0.5em 0 0.5em 0;
 }
 
 h2 {
     font-size: 36px;
-    margin: 1em 0 0.5em 0;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .date_container{
@@ -24,8 +30,30 @@ h2 {
     background-color: var(--rosa_pesquisa);
     width: 35vw;
     padding-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 5vh;
+    -webkit-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
 }
+
+.input{
+    background-color: var(--rosa_pesquisa);
+    border-color: transparent;
+    border-radius: 25px 0 25px 0;
+    padding-left: 15px;
+    font-family: var(--fonte);
+    font-size: 28px;
+    padding-right: 15px;
+    margin-bottom: 2vh;
+    width: 30vw;
+    margin-top: 2vh;
+}
+
+.input_data::placeholder {
+    font-size: 24px;
+    font-family: var(--fonte);
+}
+
 
 .to-do-lists{
     display: flex;
@@ -33,10 +61,10 @@ h2 {
 }
 
 .tasks_container{
-    height: 40vw;
+    height: 40vh;
     width: 22vw;
     overflow: auto;
-    margin: 15px;
+    margin: 1vw;
     display: flex;
     align-items: center;
     justify-content:first baseline;
@@ -92,6 +120,9 @@ h2 {
     color: var(--preto_fonte);
     text-align: center;
     padding: 30px 10px 0 10px;
+    -webkit-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 30px -7px rgba(0,0,0,0.75);
 }
 
 .btn:hover{
@@ -150,6 +181,10 @@ h2 {
         color: var(--preto_fonte);
         text-align: center;
         padding: 30px 10px 0 10px;
+    }
+
+    .input {
+        width: 65vw;
     }
 
     .input::placeholder {

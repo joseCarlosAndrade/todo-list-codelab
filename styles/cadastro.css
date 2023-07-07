@@ -7,6 +7,14 @@ body{
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    background-image: url( './images/wave_cadastro.svg' ),
+    url('./images/funky-lines.png');
+    /* background-size: cover; */
+
+    background-repeat: no-repeat, repeat;
+    background-position: bottom center;
+    background-size: auto, auto;
+    background-attachment: fixed, fixed;
 }
 
 label {
