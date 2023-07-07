@@ -108,29 +108,48 @@ h2 {
     h2 {
         font-size: 22px;
     }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--rosa_botao);
+        outline: 1px solid var(--cinza_botao);
+      }
     
-    .tasks_prontas {
-        width: 300px;
-        height: 500px;
+    .to-do-lists{
+        display: flex;
+        flex-direction: column;
+        height: 100vw;
+        overflow: scroll;
+        flex-wrap: wrap;
     }
 
-    .input_data {
-        width: 250px;
+    .tasks_container {
+        width: 75vw;
+        height: 90vw;
+        box-shadow: 4.5px 5px 15px -3.5px rgba(0,0,0,0.75);
+    }
+
+    .date_container {
         font-size: 16px;
+        width: 75vw;
     }
 
     .button_area {
         flex-direction: column;
         gap: 1em;
+        width: 75vw;
     }
 
-    button.btn {
-        height: 50px;
-    }
-
-    a.btn{
-        height: 35px;
-        padding-top: 15px;
+    .btn{
+        border-radius: 25px 0 25px 0;
+        border-color: transparent;
+        width: 75vw;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--preto_fonte);
+        text-align: center;
+        padding: 30px 10px 0 10px;
     }
 
     .input::placeholder {
